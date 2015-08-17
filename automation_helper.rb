@@ -4,7 +4,7 @@ require 'headless'
 # Contains helper methods that can be used from various automation tests
 module AutomationHelper
   def initialize_browser
-    # Headless.new.start
+    Headless.new.start
     @browser = Watir::Browser.new
     # IMPORTANT. Without this, watir can't see login link in headless mode
     # (As it becomes a menu in smaller screen sizes)

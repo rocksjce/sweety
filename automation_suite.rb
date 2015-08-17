@@ -10,5 +10,5 @@ RSpec.configure do |config|
 end
 
 
-TEST_SCRIPTS = ["login"]
+TEST_SCRIPTS = ["login", "glucose_level_entry"]
 TEST_SCRIPTS.each { |script| load "#{script}.rb" }

@@ -5,6 +5,7 @@ describe 'login' do
     expect(@browser.text).not_to include("Ooops!")
     expect(@browser.text).to include("Hello")
     expect(@browser.text).to include("Signed in successfully")
+    expect(@browser.text).to include("Welcome to Sweety")
   end
 
   it "should not work with wrong password" do
